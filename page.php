@@ -3,7 +3,7 @@
 get_header(); ?>
 <!-- section.about -->
 	<section id="about">
-		<div class="wrapper">
+		<div class="wrapper flex column">
 
 		<h2>About</h2>
 
@@ -13,13 +13,18 @@ get_header(); ?>
 				)
 		); ?>
 
+			<div class="flex aboutContent">
+
 			<?php if ($aboutQuery->have_posts()): ?>
-				<?php while($aboutQuery->have_posts()): $aboutQuery->the_post(); ?>
-				<?php the_post_thumbnail('medium'); ?>
-				<p><?php the_content(); ?></p>
-				<?php endwhile ?>
-			<?php wp_reset_postdata(); ?>
-		<?php endif ?>
+					<?php while($aboutQuery->have_posts()): $aboutQuery->the_post(); ?>
+					<?php the_post_thumbnail('medium'); ?>
+					<div class="aboutText">
+						<p><?php the_content(); ?></p>
+					</div>
+					<?php endwhile ?>
+				<?php wp_reset_postdata(); ?>
+						<?php endif ?>
+			</div>
 
 		</div>
 	</section>
@@ -27,7 +32,7 @@ get_header(); ?>
 
 <!-- section.recent -->
 	<section id="work">
-		<div class="wrapper">
+		<div class="wrapper flex">
 
 		<h2>Recent Work</h2>
 
@@ -40,14 +45,18 @@ get_header(); ?>
 
 				<?php if ($workQuery->have_posts()): ?>
 					<?php while($workQuery->have_posts()): $workQuery->the_post(); ?>
-				<div class="works">
-					<h3><?php the_title( ) ?></h3>
-					<?php the_post_thumbnail('large'); ?>
-					<p><?php the_content( ); ?></p>
-					<button class="liveDemo"><a target="_blank" href="http://<?php the_field('live_demo');?>
-					">Live Demo</a>
-					</button>
-					<button class="source"><a href="<?php the_field('source'); ?> ">Source</a></button>
+				<div class="works flex">
+					<div class="worksImg"><?php the_post_thumbnail('large'); ?></div>
+					<div class="worksText">
+						<h3><?php the_title( ) ?></h3>
+						<p><?php the_content( ); ?></p>
+						<div class="worksButtons">
+							<button class="liveDemo"><a target="_blank" href="http://<?php the_field('live_demo');?>
+							">Live Demo</a>
+							</button>
+							<button class="source"><a href="<?php the_field('source'); ?> ">Source</a></button>
+						</div>
+					</div>
 				</div>
 				<?php endwhile ?>
 			<?php wp_reset_postdata(); ?>
@@ -59,7 +68,7 @@ get_header(); ?>
 
 <!-- section.skills -->
 	<section id="skills">
-		<div class="wrapper">
+		<div class="wrapper flex">
 			<?php $skillQuery = new WP_query(
 				array(
 						'posts_per_page'=>-1,
@@ -82,7 +91,7 @@ get_header(); ?>
 
 <!-- section.contact -->
 	<section id="contact">
-		<div class="wrapper">
+		<div class="wrapper flex">
 
 			<h2>Contact</h2>
 		

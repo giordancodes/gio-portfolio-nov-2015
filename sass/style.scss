@@ -7,6 +7,12 @@
 * Author URI: http://hackeryou.com
 */
 
+$lightgrey: #D8D8D8;
+$darkgrey: #5B5C5D;
+$green: #49F968;
+$darkergrey: #3E4042;
+$opensans: 'Open Sans', sans-serif;
+
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -22,10 +28,16 @@ Default Styling
 img {
 	max-width: 100%;
 	height: auto;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
 }
 
 body {
 	color: #333;
+	font-family: $opensans;
 }
 
 .container {
@@ -34,20 +46,19 @@ body {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	// float: left;
+	// width: 65%;
+	// margin-right: 5%;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .full {
 	width: 100%;
 }
-
-$lightgrey: #D8D8D8;
-$darkgrey: #5B5C5D;
-$green: #49F968;
-$darkergrey: #3E4042;
-$opensans: 'Open Sans', sans-serif;
 
 header{
 	padding: 0;
@@ -58,6 +69,7 @@ header{
 .site-title, .site-description{
 	text-align: center;
 	color: white;
+	margin: 0;
 }
 
 
@@ -90,8 +102,6 @@ h2{
 .wrapper{
 	max-width: 1080px;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .column{
@@ -102,8 +112,18 @@ h2{
 	flex-direction: row;
 }
 
+#about{
+	img{
+		border-radius: 50%;
+	}
+}
+
 #work{
 	background: $darkgrey;
+}
+
+.worksImg, .worksText{
+	width: 50%;
 }
 
 #skills{
