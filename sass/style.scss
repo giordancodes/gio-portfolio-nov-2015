@@ -1,0 +1,133 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+$lightgrey: #D8D8D8;
+$darkgrey: #5B5C5D;
+$green: #49F968;
+$darkergrey: #3E4042;
+$opensans: 'Open Sans', sans-serif;
+
+header{
+	padding: 0;
+	margin: 0;
+	background: $darkgrey;
+}
+
+.site-title, .site-description{
+	text-align: center;
+	color: white;
+}
+
+
+
+nav{
+	position: fixed;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				color: white;
+			}
+		}
+	}
+}
+
+.curly{
+	display: inline;
+	color: $green;
+}
+
+h2{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column{
+	flex-direction: column;
+}
+
+.row{
+	flex-direction: row;
+}
+
+#work{
+	background: $darkgrey;
+}
+
+#skills{
+	background: $lightgrey;
+}
+
+#skills .wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	// padding: 5rem 0;
+	.skillsImg{
+		img{
+
+		}
+	}
+}
+
+#contact{
+	background: white;
+}
+
+
+
+
+
+
+
