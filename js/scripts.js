@@ -1,4 +1,5 @@
 $(function(){
 
+	$('#contact').smoothScroll();
 
 });

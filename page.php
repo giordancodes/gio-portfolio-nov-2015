@@ -71,22 +71,23 @@ get_header(); ?>
 		<div class="wrapper column flex">
 
 			<h2>Skills</h2>
-			<?php $skillQuery = new WP_query(
-				array(
-						'posts_per_page'=>-1,
-						'post_type'=>'skill'
-					)
-			); ?>
-
-				<?php if ($skillQuery->have_posts()): ?>
-					<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
-					<div class="skillsImg">
-					<?php echo the_post_thumbnail('thumbnail'); ?>
-					</div>
-					<?php endwhile ?>
-				<?php wp_reset_postdata(); ?>
-			<?php endif ?>
-
+				<div class="skillsFlex flex row">
+							<?php $skillQuery = new WP_query(
+								array(
+										'posts_per_page'=>-1,
+										'post_type'=>'skill'
+									)
+							); ?>
+				
+								<?php if ($skillQuery->have_posts()): ?>
+									<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
+									<div class="skillsImg">
+									<?php echo the_post_thumbnail('thumbnail'); ?>
+									</div>
+									<?php endwhile ?>
+								<?php wp_reset_postdata(); ?>
+							<?php endif ?>
+			</div>
 		</div>
 	</section>
 <!-- /section.skills -->
