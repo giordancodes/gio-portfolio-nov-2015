@@ -6,6 +6,7 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
 
 <?php wp_head(); ?>
 </head>
@@ -22,8 +23,6 @@
 		<p id="close" class="curly">}</p>
 	</ul>
 </nav><!-- #site-navigation -->
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
