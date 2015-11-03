@@ -66,16 +66,24 @@ header{
 	background: $darkgrey;
 }
 
+#masthead{
+	height: 100vh;
+	justify-content: center;
+}
+
+.site-branding{
+	justify-content: center;
+	align-items: center;
+}
+
 .site-title, .site-description{
 	text-align: center;
 	color: white;
-	margin: 0;
 }
-
-
 
 nav{
 	position: fixed;
+	font-size: 2.4rem;
 	ul{
 		margin: 0;
 		padding: 0;
@@ -94,9 +102,18 @@ nav{
 	color: $green;
 }
 
+h1{
+	font-weight: 100;
+	font-size: 5rem;
+	color: white;
+}
+
 h2{
+	font-weight: 100;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 3rem;
+	padding: 3rem 0;
 }
 
 .wrapper{
@@ -113,9 +130,20 @@ h2{
 }
 
 #about{
+	height: 100vh;
+	.wrapper{
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
 	img{
 		border-radius: 50%;
 	}
+}
+
+.aboutContent{
+	align-items: center;
+	justify-content: center;
 }
 
 #work{
@@ -128,21 +156,18 @@ h2{
 
 #skills{
 	background: $lightgrey;
-}
-
-#skills .wrapper{
-	display: flex;
-	flex-wrap: wrap;
-	// padding: 5rem 0;
-	.skillsImg{
-		img{
-
-		}
+	height: 100vh;
+	.wrapper{
+		height: 100%;
 	}
 }
 
 #contact{
 	background: white;
+	height: 100vh;
+	.wrapper{
+		height: 100%;
+	}
 }
 
 

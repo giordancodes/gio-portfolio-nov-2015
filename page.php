@@ -68,7 +68,9 @@ get_header(); ?>
 
 <!-- section.skills -->
 	<section id="skills">
-		<div class="wrapper flex">
+		<div class="wrapper column flex">
+
+			<h2>Skills</h2>
 			<?php $skillQuery = new WP_query(
 				array(
 						'posts_per_page'=>-1,
