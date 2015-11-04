@@ -218,7 +218,7 @@ h3{
 		$brown;
 	background-position: center;
 	background-repeat: space;
-	background-size: cover;
+	background-size: 80%;
 	padding: 2rem;
 	padding-bottom: 8rem;
 	h2{
@@ -326,10 +326,26 @@ h3{
 	}
 	.wrapper{
 		height: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
-
+.socialIcons{
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	a{
+		color: $beige;
+		font-size: 5rem;
+		border-radius: 50%;
+		background: rgba(0,0,0,.3);
+		padding: 1rem 2rem;
+		&:hover, &:focus{
+			color: white;
+		}
+	}
+}
 
 
 

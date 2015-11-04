@@ -105,9 +105,27 @@ echo $thumbnail->post_title; ?>">
 
 <!-- section.contact -->
 <section id="contact">
-	<div class="wrapper flex">
 
-		<h2>Contact</h2>
+	<h2>Contact</h2>
+
+		<div class="wrapper flex">
+
+			<?php $socialQuery = new WP_query(
+					array(
+							'posts_per_page'=>-1,
+							'post_type'=>'social'
+						)
+					); ?>
+			<div class="socialIcons flex wow animated fadeIn">
+					<?php if ($socialQuery->have_posts()): ?>
+						<?php while($socialQuery->have_posts()): $socialQuery->the_post(); ?>
+							
+							<a href="<?php the_field('social_link'); ?>"><i class="fa fa-<?php the_field('social_logo'); ?>"></a></i>
+						
+						<?php endwhile ?>
+					<?php wp_reset_postdata(); ?>
+				<?php endif ?>		
+			</div>
 	
 	</div>
 </section>
