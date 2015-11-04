@@ -121,6 +121,12 @@ h2{
 	padding: 3rem 0;
 }
 
+h3{
+	font-size: 4rem;
+	font-weight: 400;
+	color: white;
+}
+
 .wrapper{
 	max-width: 1080px;
 	margin: 0 auto;
@@ -132,6 +138,19 @@ h2{
 
 .row{
 	flex-direction: row;
+}
+
+button{
+	background: $darkgrey;
+	padding: 1rem;
+	border-radius: 10px;
+	&:nth-child(1){
+		margin-right: 1rem;
+	}
+	a{
+		color: $green;
+		font-size: 1.6rem;
+	}
 }
 
 #about{
@@ -163,10 +182,35 @@ h2{
 
 #work{
 	background: $darkgrey;
+	padding: 2rem;
+}
+
+.works{
+	margin-bottom: 2rem;
+	justify-content: center;
+	align-content: center;
 }
 
 .worksImg, .worksText{
 	width: 50%;
+	padding: 2rem;
+}
+
+.worksImg{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.worksText{
+	justify-content: space-around;
+	p{
+		color: white;
+	}
+}
+
+.worksButtons{
+	justify-content: flex-start;
 }
 
 #skills{
