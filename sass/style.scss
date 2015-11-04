@@ -9,9 +9,15 @@
 
 $lightgrey: #D8D8D8;
 $darkgrey: #5B5C5D;
-$green: #49F968;
+$green: lawngreen;
 $darkergrey: #3E4042;
 $opensans: 'Open Sans', sans-serif;
+
+$dark: #161616;
+$grey: #676351;
+$brown: #534334;
+$beige: #D0AC54;
+$creme: #967D47;
 
 @import 'normalize';
 @import 'typography';
@@ -63,7 +69,7 @@ body {
 header{
 	padding: 0;
 	margin: 0;
-	background: $darkgrey;
+	background: $brown;
 }
 
 #masthead{
@@ -86,6 +92,7 @@ nav{
 	font-size: 2.4rem;
 	left: 20px;
 	top: 20px;
+	z-index: 9999;
 	ul{
 		margin: 0;
 		padding: 0;
@@ -93,15 +100,18 @@ nav{
 		li{
 			display: inline-block;
 			a{
-				color: white;
+				color: $beige;
 			}
 		}
 	}
 }
 
+.navLi{
+}
+
 .curly{
 	a{
-		color: $green;
+		color: white;
 		font-size: 3rem;
 	}
 	display: inline;
@@ -148,7 +158,7 @@ button{
 		margin-right: 1rem;
 	}
 	a{
-		color: $green;
+		color: $creme;
 		font-size: 1.6rem;
 	}
 }
@@ -181,10 +191,10 @@ button{
 }
 
 #work{
-	background: $darkgrey;
+	background: $dark;
 	padding: 2rem;
 	h2{
-		color: black;
+		color: $beige;
 	}
 }
 
@@ -203,6 +213,10 @@ button{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	img{
+		border-radius: 1rem;
+		border: solid 3px $lightgrey;
+	}
 }
 
 .worksText{
@@ -219,6 +233,9 @@ button{
 #skills{
 	background: $lightgrey;
 	height: 100vh;
+	h2{
+		color: $dark;
+	}
 	.wrapper{
 		height: 100%;
 	}
@@ -237,8 +254,11 @@ button{
 }
 
 #contact{
-	background: white;
+	background: $brown;
 	height: 100vh;
+	h2{
+		color: $beige;
+	}
 	.wrapper{
 		height: 100%;
 	}

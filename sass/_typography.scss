@@ -2,8 +2,8 @@ a {
 	color: white;
 	text-decoration: none;
 	transition: color .6s ease-in;
-	&:hover {
-		color: $green;
+	&:hover, &:focus {
+		color: white;
 	}
 }
 
