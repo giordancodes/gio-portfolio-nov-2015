@@ -107,12 +107,10 @@ echo $thumbnail->post_title; ?>">
 <section id="contact">
 	<div class="wrapper flex">
 
-		<h2><span class="hint--top" data-hint="yooooo">Contact</span></h2>
+		<h2>Contact</h2>
 	
 	</div>
 </section>
 <!-- /section.contact -->
 
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

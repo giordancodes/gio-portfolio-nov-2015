@@ -19,5 +19,8 @@
 </script>
 
 <?php wp_footer(); ?>
+
+<!-- square svg by Friedrich Santana on thenounproject.com -->
+
 </body>
 </html>
