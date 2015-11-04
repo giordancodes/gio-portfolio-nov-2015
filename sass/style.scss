@@ -12,6 +12,7 @@ $darkgrey: #5B5C5D;
 $green: lawngreen;
 $darkergrey: #3E4042;
 $opensans: 'Open Sans', sans-serif;
+$worksans: 'Work Sans', sans-serif;
 
 $dark: #161616;
 $grey: #676351;
@@ -156,6 +157,8 @@ button{
 	background: transparent;
 	padding: 1rem;
 	border-radius: 10px;
+	font-family: $worksans;
+	font-weight: 400;
 	&:nth-child(1){
 		margin-right: 1rem;
 	}
@@ -212,18 +215,27 @@ button{
 	background: $dark;
 	width: 80%;
 	margin: 0 auto;
+	// padding: 3rem 1rem;
 	h3{
-		margin: 4rem 0;
+		font-family: $worksans;
+		margin: 3rem 0;
 		text-align: center;
 	}
 }
 
 .worksImg, .worksText{
 	width: 50%;
-	padding: 2rem;
+}
+
+.worksPair{
+	// background: $grey;
+	padding: 0 2rem;
+	width: 100%;
+	align-items: center;
 }
 
 .worksImg{
+	padding: 2rem;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -235,8 +247,14 @@ button{
 .worksText{
 	justify-content: space-around;
 	border-left: 1px dotted $beige;
+	background: $brown;
+	// height: 65%;
+	padding: 1rem;
 	p{
 		color: white;
+		margin: 0 0 3rem;
+		font-family: $worksans;
+		font-size: 2rem;
 	}
 }
 

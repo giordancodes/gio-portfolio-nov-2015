@@ -48,10 +48,12 @@ get_header(); ?>
 				<div class="works flex column">
 				<h3><a target="_blank" href="http://<?php the_field('live_demo');?>
 								"><?php the_title( ) ?></h3></a>
-					<div class="worksPair flex">
+					<div class="worksPair flex animated fadeIn wow">
 						<div class="worksImg wow slideInLeft"><?php the_post_thumbnail('large'); ?></div>
 						<div class="worksText wow slideInRight flex column">
-							<p><?php the_content( ); ?></p>
+							<div class="worksP">
+								<?php the_content( );?>
+							</div>
 							<div class="worksButtons flex">
 								<button class="liveDemo"><a target="_blank" href="http://<?php the_field('live_demo');?>
 								">Live Demo</a>
