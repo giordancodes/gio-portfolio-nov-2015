@@ -318,14 +318,14 @@ h3{
 	url(../gb-nov-2015/images/square.svg),
 		$brown;
 	background-repeat: no-repeat;
-	background-size: 30%;
+	background-size: 40%;
 	background-position: center;
 	height: 100vh;
 	h2{
 		color: $beige;
 	}
 	.wrapper{
-		height: 100%;
+		height: calc(100% - 16rem);
 		align-items: center;
 		justify-content: center;
 	}
@@ -334,13 +334,13 @@ h3{
 .socialIcons{
 	justify-content: space-around;
 	align-items: center;
-	width: 50%;
+	width: 70%;
 	a{
 		color: $beige;
-		font-size: 5rem;
-		border-radius: 50%;
+		font-size: 6rem;
+		border-radius: 60%;
 		background: rgba(0,0,0,.3);
-		padding: 1rem 2rem;
+		padding: 1rem 3rem;
 		&:hover, &:focus{
 			color: white;
 		}

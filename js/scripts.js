@@ -1,5 +1,5 @@
 $(function(){
 
-	$('#contact').smoothScroll();
+	$('a').smoothScroll();
 
 });
