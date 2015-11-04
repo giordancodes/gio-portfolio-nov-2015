@@ -81,7 +81,7 @@ get_header(); ?>
 				
 								<?php if ($skillQuery->have_posts()): ?>
 									<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
-									<div class="skillsImg">
+									<div class="skillsImg wow animated fadeIn">
 									<?php echo the_post_thumbnail('thumbnail'); ?>
 									</div>
 									<?php endwhile ?>

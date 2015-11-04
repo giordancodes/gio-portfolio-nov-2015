@@ -183,6 +183,9 @@ button{
 #work{
 	background: $darkgrey;
 	padding: 2rem;
+	h2{
+		color: black;
+	}
 }
 
 .works{
@@ -192,7 +195,7 @@ button{
 }
 
 .worksImg, .worksText{
-	width: 50%;
+	width: 45%;
 	padding: 2rem;
 }
 
@@ -229,6 +232,8 @@ button{
 
 .skillsImg{
 	width: 25%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #contact{
