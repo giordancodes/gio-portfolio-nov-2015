@@ -17,8 +17,8 @@ get_header(); ?>
 
 			<?php if ($aboutQuery->have_posts()): ?>
 					<?php while($aboutQuery->have_posts()): $aboutQuery->the_post(); ?>
-					<?php the_post_thumbnail('medium'); ?>
-					<div class="aboutText">
+					<div class="aboutImg wow animated slideInLeft"><?php the_post_thumbnail('medium'); ?></div>
+					<div class="aboutText wow animated slideInRight">
 						<p><?php the_content(); ?></p>
 					</div>
 					<?php endwhile ?>
