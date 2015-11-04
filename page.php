@@ -81,8 +81,9 @@ get_header(); ?>
 				
 								<?php if ($skillQuery->have_posts()): ?>
 									<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
-									<div class="skillsImg wow animated fadeIn">
-									<?php echo the_post_thumbnail('thumbnail'); ?>
+									<div class="skillsImg wow animated fadeIn"><span class="hint--top" data-hint="<?php $thumbnail = get_post( get_post_thumbnail_id() );
+echo $thumbnail->post_title; ?>">
+									<?php the_post_thumbnail('thumbnail'); ?></span>
 									</div>
 									<?php endwhile ?>
 								<?php wp_reset_postdata(); ?>
@@ -96,7 +97,7 @@ get_header(); ?>
 	<section id="contact">
 		<div class="wrapper flex">
 
-			<h2>Contact</h2>
+			<h2><span class="hint--top" data-hint="yooooo">Contact</span></h2>
 		
 		</div>
 	</section>
