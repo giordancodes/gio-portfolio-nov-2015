@@ -45,17 +45,20 @@ get_header(); ?>
 
 				<?php if ($workQuery->have_posts()): ?>
 					<?php while($workQuery->have_posts()): $workQuery->the_post(); ?>
-				<div class="works flex">
-					<div class="worksImg wow slideInLeft"><?php the_post_thumbnail('large'); ?></div>
-					<div class="worksText wow slideInRight flex column">
-						<h3><?php the_title( ) ?></h3>
-						<p><?php the_content( ); ?></p>
-						<div class="worksButtons flex">
-							<button class="liveDemo"><a target="_blank" href="http://<?php the_field('live_demo');?>
-							">Live Demo</a>
-							</button>
-							<button class="source"><a href="<?php the_field('source'); ?> ">Source</a></button>
-						</div>
+				<div class="works flex column">
+				<h3><a target="_blank" href="http://<?php the_field('live_demo');?>
+								"><?php the_title( ) ?></h3></a>
+					<div class="worksPair flex">
+						<div class="worksImg wow slideInLeft"><?php the_post_thumbnail('large'); ?></div>
+						<div class="worksText wow slideInRight flex column">
+							<p><?php the_content( ); ?></p>
+							<div class="worksButtons flex">
+								<button class="liveDemo"><a target="_blank" href="http://<?php the_field('live_demo');?>
+								">Live Demo</a>
+								</button>
+								<button class="source"><a href="<?php the_field('source'); ?> ">Source</a></button>
+							</div>
+					</div>
 					</div>
 				</div>
 				<?php endwhile ?>

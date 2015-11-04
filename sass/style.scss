@@ -198,7 +198,7 @@ button{
 }
 
 #work{
-	background: $dark;
+	background: $brown;
 	padding: 2rem;
 	h2{
 		color: $beige;
@@ -209,10 +209,17 @@ button{
 	margin-bottom: 2rem;
 	justify-content: center;
 	align-content: center;
+	background: $dark;
+	width: 80%;
+	margin: 0 auto;
+	h3{
+		margin: 4rem 0;
+		text-align: center;
+	}
 }
 
 .worksImg, .worksText{
-	width: 45%;
+	width: 50%;
 	padding: 2rem;
 }
 
@@ -220,13 +227,14 @@ button{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	border-right: 1px dotted $beige;
 	img{
-		border: solid 1px $creme;
 	}
 }
 
 .worksText{
 	justify-content: space-around;
+	border-left: 1px dotted $beige;
 	p{
 		color: white;
 	}
