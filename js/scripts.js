@@ -14,9 +14,10 @@ function navAnimation(elem){
 
 	$( elem ).click(function() {
 		$( '.navLi' ).animate({
-			width:['toggle', 'easeOutCirc'],
-			height:[ 'toggle', 'easeInCirc'],
-			duration: 800
+			width:['toggle', 'easeInQuint'],
+			height:[ 'toggle', 'easeInCubic'],
+			duration: 800,
+			opacity: 1
 		});
 	});
 }

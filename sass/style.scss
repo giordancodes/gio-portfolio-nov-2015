@@ -100,7 +100,7 @@ nav{
 		padding: 0;
 		list-style: none;
 		li{
-			display: inline-block;
+			display: inline;
 			a{
 				color: $beige;
 			}
@@ -108,8 +108,13 @@ nav{
 	}
 }
 
+.curly a, nav ul li a{
+	color: $creme;
+}
+
 .navLi{
 	display: inline-block;
+	opacity: 0;
 }
 
 .curly{
@@ -124,7 +129,7 @@ nav{
 
 nav ul:hover p.curly a,
 nav ul:focus p.curly a{
-	color: white;
+	color: black;
 }
 
 h1{
