@@ -3,7 +3,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Work+Sans:100,200,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300|Work+Sans:400,100,200|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/hint.css/1.3.6/hint.min.css">
