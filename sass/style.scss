@@ -274,13 +274,13 @@ h3{
 	justify-content: space-around;
 	border-radius:  0 1rem 1rem 0;
 	background: $brown;
-	// height: 65%;
 	padding: 1rem;
 	p{
 		color: white;
 		margin: 0 0 3rem;
 		font-family: $worksans;
 		font-size: 2rem;
+		font-weight: 400;
 		a:hover{
 			color: $beige;
 		}
@@ -346,6 +346,18 @@ h3{
 		&:hover, &:focus{
 			color: white;
 			background: $beige;
+		}
+	}
+}
+
+.toTop{
+	text-align: center;
+	font-weight: 100;
+	a{
+		color: $beige;
+		transition: .8s ease-in;
+		&:hover, &:focus{
+			color: white;
 		}
 	}
 }

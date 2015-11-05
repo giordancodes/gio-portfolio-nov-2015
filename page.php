@@ -120,14 +120,16 @@ echo $thumbnail->post_title; ?>">
 					<?php if ($socialQuery->have_posts()): ?>
 						<?php while($socialQuery->have_posts()): $socialQuery->the_post(); ?>
 							
-							<a href="<?php the_field('social_link'); ?>"><i class="fa wow animated fadeIn fa-<?php the_field('social_logo'); ?>" data-wow-delay="<?php the_field('social_dly') ?>s"></a></i>
+							<a target="_blank" href="<?php the_field('social_link'); ?>"><i class="fa wow animated fadeIn fa-<?php the_field('social_logo'); ?>" data-wow-delay="<?php the_field('social_dly') ?>s"></a></i>
 						
 						<?php endwhile ?>
 					<?php wp_reset_postdata(); ?>
 				<?php endif ?>		
 			</div>
-	
-	</div>
+		</div>
+		<div class="toTop">
+			<p class="toTop"><a href="#header">^ back to top ^</a></p>
+		</div>
 </section>
 <!-- /section.contact -->
 
