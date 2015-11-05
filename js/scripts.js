@@ -14,13 +14,9 @@ function navAnimation(elem){
 
 	$( elem ).click(function() {
 		$( '.navLi' ).animate({
-			width:'toggle',
-			height: 'toggle',
-			duration: 10000,
-			specialEasing: {
-				width: 'linear',
-				height: 'easeIn'
-			}
+			width:['toggle', 'easeOutCirc'],
+			height:[ 'toggle', 'easeInCirc'],
+			duration: 800
 		});
 	});
 }

@@ -66,7 +66,7 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
-    array( 'jquery', 'plugins', 'smoothScroll' ), //dependencies
+    array( 'jquery', 'plugins', 'smoothScroll', 'jqUi' ), //dependencies
     null, // version number
     true //load in footer
   );
@@ -74,6 +74,14 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'smoothScroll', //handle
     "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.6/jquery.smooth-scroll.min.js", //source
+    array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'jqUi', //handle
+    "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.11.4/jquery-ui.min.js", //source
     array( 'jquery', 'plugins' ), //dependencies
     null, // version number
     true //load in footer
