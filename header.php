@@ -18,12 +18,14 @@
 
 <nav>
 	<ul>
-		<p id="open" class="curly"><a href="#">{</a></p>
-		<li class="navLi"><a href="#about">About</a></li>
-		<li class="navLi"><a href="#work">Work</a></li>
-		<li class="navLi"><a href="#skills">Skills</a></li>
-		<li class="navLi"><a href="#contact">Contact</a></li>
-		<p id="close" class="curly"><a href="#">}</a></p>
+		<p id="curly" class="curly"><a>{</a></p>
+		<div class="navLi">
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</div>
+		<p id="curly" class="curly"><a>}</a></p>
 	</ul>
 </nav><!-- #site-navigation -->
 

@@ -109,14 +109,22 @@ nav{
 }
 
 .navLi{
+	display: inline-block;
 }
 
 .curly{
+	display: inline-block;
+	cursor: pointer;
 	a{
-		color: white;
+		color: $beige;
 		font-size: 3rem;
+		transition: .8s color;
 	}
-	display: inline;
+}
+
+nav ul:hover p.curly a,
+nav ul:focus p.curly a{
+	color: white;
 }
 
 h1{
