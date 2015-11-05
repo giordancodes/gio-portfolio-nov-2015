@@ -116,11 +116,11 @@ echo $thumbnail->post_title; ?>">
 							'post_type'=>'social'
 						)
 					); ?>
-			<div class="socialIcons flex wow animated fadeIn">
+			<div class="socialIcons flex">
 					<?php if ($socialQuery->have_posts()): ?>
 						<?php while($socialQuery->have_posts()): $socialQuery->the_post(); ?>
 							
-							<a href="<?php the_field('social_link'); ?>"><i class="fa fa-<?php the_field('social_logo'); ?>"></a></i>
+							<a href="<?php the_field('social_link'); ?>"><i class="fa wow animated fadeIn fa-<?php the_field('social_logo'); ?>" data-wow-delay="<?php the_field('social_dly') ?>s"></a></i>
 						
 						<?php endwhile ?>
 					<?php wp_reset_postdata(); ?>
