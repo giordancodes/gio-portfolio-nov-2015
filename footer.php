@@ -19,7 +19,19 @@
 
 <?php wp_footer(); ?>
 
-<!-- square svg by Friedrich Santana on thenounproject.com -->
+<!-- ourobouros svg by Universal Icons,
+contact bubble svg  by Sara Jeffries,
+both from thenounproject.com -->
+
+<!-- icons by font awesome -->
+
+<!-- wow.js developed by Matt Aussague -->
+
+<!-- hint.css popups by Kushagra Gour -->
+
+<!-- animate.css by Daniel Eden -->
+
+<!-- photo of myself by Pam Lau -->
 
 </body>
 </html>

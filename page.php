@@ -91,7 +91,7 @@ get_header(); ?>
 	
 					<?php if ($skillQuery->have_posts()): ?>
 						<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
-						<div class="skillsImg wow animated fadeIn"><span class="hint--top hint--warning" data-hint="<?php $thumbnail = get_post( get_post_thumbnail_id() );
+						<div class="skillsImg wow animated fadeIn"><span class="hint--top hint--info" data-hint="<?php $thumbnail = get_post( get_post_thumbnail_id() );
 echo $thumbnail->post_title; ?>">
 						<?php the_post_thumbnail('thumbnail'); ?></span>
 						</div>

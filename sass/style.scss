@@ -14,6 +14,7 @@ $darkergrey: #3E4042;
 $opensans: 'Open Sans', sans-serif;
 $worksans: 'Work Sans', sans-serif;
 $source: 'Source Code Pro';
+$cyan: #0FA3B1;
 
 $dark: #161616;
 $grey: #676351;
@@ -72,7 +73,7 @@ body {
 header{
 	padding: 0;
 	margin: 0;
-	background: $brown;
+	background: $cyan;
 }
 
 #masthead{
@@ -92,7 +93,7 @@ header{
 
 nav{
 	position: fixed;
-	font-size: 2.4rem;
+	font-size: 3rem;
 	left: 20px;
 	top: 20px;
 	z-index: 9999;
@@ -110,7 +111,7 @@ nav{
 }
 
 .curly a, nav ul li a{
-	color: $creme;
+	color: $dark;
 }
 
 .navLi{
@@ -122,8 +123,8 @@ nav{
 	display: inline-block;
 	cursor: pointer;
 	a{
-		color: $beige;
-		font-size: 3rem;
+		color: $whitey;
+		font-size: 5rem;
 		transition: .8s color;
 	}
 }
@@ -216,6 +217,11 @@ h3{
 	}
 }
 
+.aboutImg{
+	width: 50%;
+	padding: 3rem;
+}
+
 .aboutContent{
 	align-items: center;
 	justify-content: space-around;
@@ -223,20 +229,22 @@ h3{
 }
 
 .aboutText{
+	width: 50%;
+	padding: 2rem;
 	h2{
 		color: $dark;
 	}
 	p{
 		font-size: 2rem;
 		color: $dark;
-		line-height: 1.75rem;
+		line-height: 3.6rem;
 	}
 }
 
 #work{
 	background:
-		url(../gb-nov-2015/images/prog.svg),
-		$brown;
+		url(../gb-nov-2015/images/ouro.svg),
+		$cyan;
 	background-position: center;
 	background-repeat: fixed no-repeat;
 	background-size: 50%;
@@ -298,8 +306,8 @@ h3{
 .worksText{
 	justify-content: space-around;
 	border-radius:  0 1rem 1rem 0;
-	// background: $brown;
-	padding: 1rem;
+	// background: $cyan;
+	padding: 1rem 4rem;
 	p{
 		color: white;
 		margin: 0 0 3rem;
@@ -342,8 +350,8 @@ h3{
 
 #contact{
 	background: 
-	url(../gb-nov-2015/images/contact.svg),
-		$brown;
+	url(../gb-nov-2015/images/contact50.svg),
+		$cyan;
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: center;
@@ -369,6 +377,7 @@ h3{
 		border-radius: 60%;
 		background: rgba(0,0,0,.3);
 		padding: 1.4rem 3rem;
+		border: 1px solid $beige;
 		transition: background ease-in .9s, color ease-in .8s;
 		&:hover, &:focus{
 			color: white;

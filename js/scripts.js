@@ -14,12 +14,15 @@ function navAnimation(elem){
 
 	$( elem ).click(function() {
 		$( '.navLi' ).animate({
-			width:['toggle', 'easeInQuint'],
+			width:['toggle', 'easeOutQuint'],
 			height:[ 'toggle', 'easeInCubic'],
-			duration: 800,
-			opacity: 1
-		});
+			complete: navOpacity()
+		}, 350);
 	});
+}
+
+function navOpacity(){
+	$( '.navLi' ).css('opacity', 1);
 }
 
 navAnimation('.curly');
