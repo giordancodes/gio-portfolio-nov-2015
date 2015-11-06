@@ -323,6 +323,7 @@ h3{
 #skills{
 	background: $lightgrey;
 	height: 100vh;
+	padding-bottom: 4rem;
 	h2{
 		color: $dark;
 		padding-top: 10rem;
@@ -395,7 +396,50 @@ h3{
 	}
 }
 
+//Media Queries Media Queries Media Queries Media Queries Media Queries 
 
+@media all and (max-width: 952px) {
+	.works{
+		width: 95%;
+	}
+	
+}
+
+@media all and (max-width: 808px) {
+	.worksButtons {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		.button:nth-child(1){
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
+	}
+	.worksText{
+		padding: 0 0 0 4rem;
+	}
+	.skillsImg {
+		width: 33.33%;
+	}
+	.socialIcons {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 696px) {
+	.aboutContent {
+		width: 100%;		
+	}
+	.worksP {
+		font-size: 1.6rem;
+	}
+}
+
+@media all and (max-width: 674px) {
+	body {
+		
+	}
+}
 
 
 
