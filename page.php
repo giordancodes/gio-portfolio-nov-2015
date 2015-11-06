@@ -3,9 +3,10 @@
 get_header(); ?>
 <!-- section.about -->
 <section id="about">
-	<div class="wrapper flex column">
-
+	
 	<h2>About</h2>
+	
+	<div class="wrapper flex column">
 
 	<?php $aboutQuery = new WP_query(
 		array(

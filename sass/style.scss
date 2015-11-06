@@ -139,6 +139,7 @@ h1{
 	color: white;
 	text-align: center;
 	font-family: $source;
+	line-height: 1.6;
 }
 
 h2{
@@ -201,9 +202,10 @@ h3{
 
 #about{
 	height: 100vh;
+	padding: 3rem 0;
 	background: $whitey;
 	h2{
-		margin-bottom: 5rem;
+		padding-top: 10rem;
 	}
 	.wrapper{
 		justify-content: center;
@@ -436,10 +438,52 @@ h3{
 }
 
 @media all and (max-width: 674px) {
-	body {
-		
+	h1{
+		padding: 0 2rem;
+	}
+	.aboutText p{
+		font-size: 1.8rem;
+	}
+	.worksPair {
+		flex-direction: column;
+	}
+	.worksImg, .worksText{
+		width: 100%;
+	}
+	.worksImg{
+		border-right: 0;
+	}
+	.worksButtons {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+		.button:nth-child(1){
+			margin-right: 2rem;
+			margin-bottom: 0;
+		}
 	}
 }
 
+@media all and (max-width: 588px) {
+	#about{
+		h2{
+			padding-top: 3rem;
+		}
+	}
+	#about .wrapper{
+		justify-content: space-around;
+		align-items: center;
+	}
+	.aboutContent {
+		flex-direction: column;
+	}
+	.aboutImg, .aboutText{
+		width: 80%;
+	}
+	.aboutImg{
+		text-align: center;
+		padding: 0;
+	}
+}
 
 
