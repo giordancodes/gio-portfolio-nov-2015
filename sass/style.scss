@@ -484,6 +484,22 @@ h3{
 		text-align: center;
 		padding: 0;
 	}
+	.socialIcons {
+		width: 50%;
+	}
 }
 
+@media all and (max-width: 480px) {
+	#about .wrapper{
+		justify-content: space-between;
+		padding-top: 2rem;
+	}
+	.aboutImg {
+		width: 33.33%;
+	}
+	.aboutText p{
+		font-size: 1.5rem;
+		line-height: 1.8;
+	}
+}
 
