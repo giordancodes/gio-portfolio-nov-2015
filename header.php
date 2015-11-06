@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 
 <nav>
-	<ul>
+	<ul class="flex">
 		<p id="curly" class="curly"><a>{</a></p>
 		<div class="navLi">
 			<li><a href="#about">About</a></li>

@@ -1,15 +1,14 @@
 /*
-* Theme Name: HackerYou Starter Theme
-* Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
-* Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Theme Name: Giordan Battaglin, Front-End Developer
+* Theme URI: http://giordan.ca;
+* Description: Personal Site of Giordan Battaglin
+* Version: 4.2
+* Author: Giordan Battaglin
+* Author URI: http://giordan.ca
 */
 
 $lightgrey: #D8D8D8;
 $darkgrey: #5B5C5D;
-$green: lawngreen;
 $darkergrey: #3E4042;
 $opensans: 'Open Sans', sans-serif;
 $worksans: 'Work Sans', sans-serif;
@@ -55,12 +54,6 @@ body {
 	margin: 0 auto;
 }
 
-.content {
-	// float: left;
-	// width: 65%;
-	// margin-right: 5%;
-}
-
 .flex{
 	display: flex;
 	flex-wrap: wrap;
@@ -101,6 +94,8 @@ nav{
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		align-items: center;
+		justify-content: center;
 		li{
 			display: inline;
 			a{
@@ -151,8 +146,6 @@ h2{
 	padding: 3rem 0;
 	text-transform: uppercase;
 }
-
-
 
 h3{
 	font-size: 4rem;
@@ -357,7 +350,7 @@ h3{
 	background-position: center;
 	height: 100vh;
 	h2{
-		color: $beige;
+		color: $whitey;
 		padding-top: 10rem;
 	}
 	.wrapper{
@@ -377,7 +370,7 @@ h3{
 		border-radius: 60%;
 		background: rgba(0,0,0,.3);
 		padding: 1.4rem 3rem;
-		border: 1px solid $beige;
+		border: 1px solid $whitey;
 		transition: background ease-in .9s, color ease-in .8s;
 		&:hover, &:focus{
 			color: white;
@@ -389,6 +382,7 @@ h3{
 .toTop{
 	text-align: center;
 	font-weight: 100;
+	font-size: 2rem;
 	a{
 		color: $beige;
 		transition: .8s ease-in;
