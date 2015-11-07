@@ -535,10 +535,31 @@ h3{
 		}
 	}
 	#work{
-		padding: 1rem;
+		padding: 1rem 1rem 6rem;
+		.works{
+			padding: 0;
+		}
 		h2{
 			padding-top: 1rem;
+			width: 60%;
 			margin-bottom: 0;
+		}
+		h3{
+			font-size: 2.4rem;
+		}
+		.worksPair{
+			padding: 0;
+		}
+		.worksText{
+			padding: 0;
+		}
+		.worksText p{
+			font-size: 1.4rem;
+			text-align: center;
+			padding: 0 1rem;
+		}
+		.worksButtons{
+			justify-content: center;
 		}
 	}
 }
