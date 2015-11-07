@@ -446,7 +446,7 @@ h3{
 		font-size: 1.8rem;
 	}
 	.works h3{
-		padding: 0 4rem;
+		padding: 0 3rem;
 	}
 	.worksPair {
 		flex-direction: column;
@@ -491,11 +491,22 @@ h3{
 		text-align: center;
 		padding: 0;
 	}
-	.worksText p{
+	.worksText {
+		padding: 2rem 0;
+		p{
 			font-size: 1.4rem;
-//			text-align: center;
-			padding: 0 1rem;
 		}
+	}
+	
+	.worksPair {
+		padding: 0 2rem;	
+	}
+	.worksPair:last-child{
+		margin-bottom: 0;
+	}
+	.worksImg {
+		padding: 0;
+	}
 	#skills {
 		h2{
 			width: 100%;
@@ -583,9 +594,6 @@ h3{
 			padding-top: 1rem;
 			width: 60%;
 			margin-bottom: 0;
-		}
-		.worksPair{
-			padding: 0;
 		}
 		.worksText{
 			padding: 0;
