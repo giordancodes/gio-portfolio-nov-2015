@@ -490,6 +490,12 @@ h3{
 }
 
 @media all and (max-width: 480px) {
+	h1{
+		font-size: 4rem;
+	}
+	h2{
+		font-size: 3rem;;
+	}
 	#about .wrapper{
 		justify-content: space-between;
 		padding-top: 2rem;
@@ -502,4 +508,32 @@ h3{
 		line-height: 1.8;
 	}
 }
+
+@media all and (max-width: 320px) {
+	nav {
+		font-size: 2rem;
+		top: 10px;
+		left: 10px;
+	}
+	.curly a{
+		font-size: 3.5rem;
+	}
+	#about {
+		padding-top: 1rem;
+		h2{
+			padding-top: 1rem;
+		}
+		.wrapper {
+		padding-top: 1rem;
+		}
+		.aboutText{
+			width: 95%;
+			padding-top: 1rem;
+			p{
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
 
