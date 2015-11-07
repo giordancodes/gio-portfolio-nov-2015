@@ -512,7 +512,7 @@ h3{
 @media all and (max-width: 320px) {
 	nav {
 		font-size: 2rem;
-		top: 10px;
+		top: -15px;
 		left: 10px;
 	}
 	.curly a{
@@ -532,6 +532,13 @@ h3{
 			p{
 				font-size: 1.3rem;
 			}
+		}
+	}
+	#work{
+		padding: 1rem;
+		h2{
+			padding-top: 1rem;
+			margin-bottom: 0;
 		}
 	}
 }
