@@ -433,7 +433,7 @@ h3{
 	.aboutContent {
 		width: 100%;		
 	}
-	.worksP {
+	.worksText p {
 		font-size: 1.6rem;
 	}
 }
@@ -445,11 +445,17 @@ h3{
 	.aboutText p{
 		font-size: 1.8rem;
 	}
+	.works h3{
+		padding: 0 4rem;
+	}
 	.worksPair {
 		flex-direction: column;
 	}
 	.worksImg, .worksText{
 		width: 100%;
+	}
+	.worksText{
+		padding: 0 2rem;	
 	}
 	.worksImg{
 		border-right: 0;
@@ -485,6 +491,11 @@ h3{
 		text-align: center;
 		padding: 0;
 	}
+	.worksText p{
+			font-size: 1.4rem;
+//			text-align: center;
+			padding: 0 1rem;
+		}
 	#skills {
 		h2{
 			width: 100%;
@@ -492,7 +503,7 @@ h3{
 		}
 	}
 	.skillsFlex {
-		height: 70%;
+		height: 80%;
 	}
 	.skillsImg{
 		img{
@@ -578,11 +589,6 @@ h3{
 		}
 		.worksText{
 			padding: 0;
-		}
-		.worksText p{
-			font-size: 1.4rem;
-			text-align: center;
-			padding: 0 1rem;
 		}
 		.worksButtons{
 			justify-content: center;
