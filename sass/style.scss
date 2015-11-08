@@ -497,7 +497,6 @@ h3{
 			font-size: 1.4rem;
 		}
 	}
-	
 	.worksPair {
 		padding: 0 2rem;	
 	}
@@ -531,13 +530,10 @@ h3{
 			width: 40px;
 		}
 	}
-	.socialIcons {
-		width: 50%;
-	}
 }
 
 @media all and (max-width: 480px) {
-	nav {
+	nav{
 		font-size: 2rem;
 		top: 10px;
 		left: 10px;
@@ -553,7 +549,7 @@ h3{
 	}
 	#about .wrapper{
 		justify-content: space-between;
-		padding-top: 2rem;
+		padding-top: 4rem;
 	}
 	.aboutImg {
 		width: 33.33%;
@@ -575,6 +571,9 @@ h3{
 			width: 60%;
 			margin-bottom: 0;
 		}
+	}
+	.socialIcons a{
+		text-align: center;
 	}
 }
 
@@ -616,6 +615,18 @@ h3{
 		.wrapper{
 			justify-content: center;
 			align-items: center;
+		}
+	}
+	#contact{
+		h2{
+			padding: 6rem 0;
+		}
+	}
+	.socialIcons{
+		width: 80%;
+		a{
+			font-size: 5rem;
+			padding: 2rem 3rem;
 		}
 	}
 }
