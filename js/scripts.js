@@ -24,10 +24,11 @@ navAnimation('.navLi');
 	
 function checkIos(){
 	if (is.ios() === true){
-		$('.aboutImg').removeClass('animated');
-		$('.aboutText').removeClass('animated');
-		$('.worksPair').removeClass('animated');
-		$('.skillsImg').removeClass('animated');
+		$('.aboutImg').removeClass('slideInLeft');
+		$('.aboutText').removeClass('slideInRight');
+		$('.worksText').removeClass('slideInRight');
+		$('.worksImg').removeClass('slideInLeft');
+		$('.skillsImg').removeClass('animated', 'wow');
 	}
 }
 
