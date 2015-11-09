@@ -4,15 +4,15 @@ get_header(); ?>
 <!-- section.about -->
 <section id="about">
 	
-	<h2>About</h2>
-	
 	<div class="wrapper flex column">
+	
+		<h2>About</h2>
 
-	<?php $aboutQuery = new WP_query(
-		array(
-				'post_type'=>'about'
-			)
-	); ?>
+		<?php $aboutQuery = new WP_query(
+			array(
+					'post_type'=>'about'
+				)
+		); ?>
 
 		<div class="flex aboutContent">
 
@@ -107,9 +107,9 @@ echo $thumbnail->post_title; ?>">
 <!-- section.contact -->
 <section id="contact">
 
-	<h2>Contact</h2>
-
-		<div class="wrapper flex">
+			<h2>Contact</h2>
+	<div class="wrapper flex">
+	
 
 			<?php $socialQuery = new WP_query(
 					array(
@@ -129,7 +129,7 @@ echo $thumbnail->post_title; ?>">
 			</div>
 		</div>
 		<div class="toTop">
-			<p class="toTop"><a href="#header">^ back to top ^</a></p>
+			<p class="toTop"><a class="fa fa-angle-up" href="#header"></a></p>
 		</div>
 </section>
 <!-- /section.contact -->

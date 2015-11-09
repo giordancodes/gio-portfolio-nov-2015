@@ -91,7 +91,7 @@ header{
 
 nav{
 	position: fixed;
-	font-size: 3rem;
+	font-size: 2rem;
 	left: 20px;
 	top: 20px;
 	z-index: 9999;
@@ -116,7 +116,6 @@ nav{
 
 .navLi{
 	display: inline-block;
-	opacity: 0;
 }
 
 .curly{
@@ -124,7 +123,7 @@ nav{
 	cursor: pointer;
 	a{
 		color: $whitey;
-		font-size: 5rem;
+		font-size: 4rem;
 		transition: .8s color;
 	}
 }
@@ -140,6 +139,7 @@ h1{
 	text-align: center;
 	font-family: $source;
 	line-height: 1.6;
+	margin: 0;
 }
 
 h2{
@@ -149,8 +149,9 @@ h2{
 	text-align: center;
 	font-size: 3.5rem;
 	letter-spacing: 0.5rem;
-	padding: 3rem 0;
+	padding: 3rem 0 1rem;
 	text-transform: uppercase;
+	border-bottom: 1px solid $beige;
 }
 
 h3{
@@ -200,12 +201,19 @@ h3{
 	}
 }
 
+.site-description {
+	padding: 1rem 0;
+	color: $beige;
+	font-size: 3rem;
+	border-bottom: 0;
+}
+
 #about{
 	height: 100vh;
 	padding: 3rem 0;
 	background: $whitey;
 	h2{
-		padding-top: 10rem;
+		padding-top: 5rem;
 	}
 	.wrapper{
 		justify-content: flex-start;
@@ -219,7 +227,7 @@ h3{
 }
 
 .aboutImg{
-	width: 50%;
+	width: 55%;
 	padding: 3rem;
 }
 
@@ -227,10 +235,11 @@ h3{
 	align-items: center;
 	justify-content: space-between;
 	width: 80%;
+	padding-top: 5rem;
 }
 
 .aboutText{
-	width: 50%;
+	width: 45%;
 	padding: 2rem;
 	h2{
 		color: $dark;
@@ -387,9 +396,10 @@ h3{
 }
 
 .toTop{
-	text-align: center;
+	text-align: right;
 	font-weight: 100;
-	font-size: 2rem;
+	font-size: 4rem;
+	padding-right: 2rem;
 	a{
 		color: $beige;
 		transition: .8s ease-in;
@@ -540,6 +550,7 @@ h3{
 	}
 	.curly a{
 		font-size: 3.5rem;
+		font-weight: 100;
 	}
 	h1{
 		font-size: 4rem;

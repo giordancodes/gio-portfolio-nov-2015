@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<title>Giordan Battaglin</title>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300|Work+Sans:400,100,200|Open+Sans:400,700' rel='stylesheet' type='text/css'>
