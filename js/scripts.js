@@ -1,8 +1,5 @@
 $(function(){
 
-// smoothScroll init
-	$('a').smoothScroll();
-
 // animation for toggling nav
 
 function navAnimation(elem){
