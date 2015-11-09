@@ -107,9 +107,9 @@ echo $thumbnail->post_title; ?>">
 <!-- section.contact -->
 <section id="contact">
 
-			<h2>Contact</h2>
-	<div class="wrapper flex">
+	<div class="wrapper column flex">
 	
+		<h2>Contact</h2>
 
 			<?php $socialQuery = new WP_query(
 					array(

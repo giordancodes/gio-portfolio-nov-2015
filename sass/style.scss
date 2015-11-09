@@ -124,6 +124,7 @@ nav{
 	a{
 		color: $whitey;
 		font-size: 4rem;
+		font-weight: 200;
 		transition: .8s color;
 	}
 }
@@ -210,11 +211,8 @@ h3{
 
 #about{
 	height: 100vh;
-	padding: 3rem 0;
+	padding: 3rem 0 10rem;
 	background: $whitey;
-	h2{
-		padding-top: 5rem;
-	}
 	.wrapper{
 		justify-content: flex-start;
 		align-items: center;
@@ -227,22 +225,27 @@ h3{
 }
 
 .aboutImg{
-	width: 55%;
+	width: 40%;
 	padding: 3rem;
+	text-align: center;
 }
 
 .aboutContent{
 	align-items: center;
-	justify-content: space-between;
-	width: 80%;
+	justify-content: space-around;
 	padding-top: 5rem;
 }
 
 .aboutText{
-	width: 45%;
-	padding: 2rem;
+	width: 60%;
+	padding: 2rem 6rem 2rem 2rem;
 	h2{
 		color: $dark;
+	}
+	h3{
+		color: $dark;
+		font-family: $source;
+		margin-bottom: 0;
 	}
 	p{
 		font-size: 2rem;
@@ -252,18 +255,16 @@ h3{
 }
 
 #work{
-	background:
-		url(../gb-nov-2015/images/ouro.svg),
-		$cyan;
+	background:	$cyan;
 	background-position: center;
 	background-repeat: fixed no-repeat;
 	background-size: 50%;
-	padding: 2rem;
+	padding: 10rem 0 2rem;
 	padding-bottom: 8rem;
 	h2{
 		color: $beige;
 		margin-bottom: 10rem;
-		padding-top: 10rem;
+//		padding-top: 10rem;
 	}
 }
 
@@ -276,11 +277,12 @@ h3{
 	width: 80%;
 	margin: 0 auto;
 	h3{
-		font-family: $worksans;
+		font-family: $source;
 		margin: 3rem 0;
 		text-align: left;
 		padding-right: 3rem;
 		padding-left: 2rem;
+		line-height: 1.5;
 		a{
 			color: white;
 			transition: color .8s;
@@ -305,7 +307,7 @@ h3{
 }
 
 .worksImg{
-	padding: 2rem;
+	padding: 2rem 2rem 2rem 0 ;
 	align-items: center;
 	border-right: 1px solid $beige;
 	display: block;
@@ -335,13 +337,14 @@ h3{
 #skills{
 	background: $lightgrey;
 	height: 100vh;
-	padding-bottom: 4rem;
+	padding: 10rem 0 4rem;
 	h2{
 		color: $dark;
-		padding-top: 10rem;
+//		padding-top: 10rem;
 	}
 	.wrapper{
 		height: 100%;
+		justify-content: space-between;
 	}
 }
 
@@ -365,14 +368,15 @@ h3{
 	background-size: 60%;
 	background-position: center;
 	height: 100vh;
+	position: relative;
 	h2{
 		color: $whitey;
-		padding-top: 10rem;
+//		padding-top: 10rem;
 	}
 	.wrapper{
 		height: calc(100% - 26rem);
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 	}
 }
 
@@ -400,6 +404,9 @@ h3{
 	font-weight: 100;
 	font-size: 4rem;
 	padding-right: 2rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	a{
 		color: $beige;
 		transition: .8s ease-in;
@@ -550,7 +557,6 @@ h3{
 	}
 	.curly a{
 		font-size: 3.5rem;
-		font-weight: 100;
 	}
 	h1{
 		font-size: 4rem;
