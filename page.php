@@ -62,7 +62,7 @@ get_header(); ?>
 										if($image) : 
 											?>
 											<!-- <a class="button source" href=""> -->
-										<a class="source button" target="_blank" href="http://<?= $image ?>
+										<a class="source button" target="_blank" href="<?= $image ?>
 										">Source</a>
 									<?php endif ?>
 								</div>

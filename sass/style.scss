@@ -212,10 +212,10 @@ h3{
 
 #about{
 	height: 100vh;
-	padding: 3rem 0 0;
+//	padding: 3rem 0 0;
 	background: $whitey;
 	.wrapper{
-		justify-content: space-around;
+		justify-content: space-arou;
 		align-items: center;
 		padding-top: 10rem;
 		height: 100%;
@@ -444,9 +444,25 @@ h3{
 	}
 }
 
+@media all and (max-width: 760px) {
+	#about{
+		.wrapper{
+			justify-content: space-around;
+			padding-top: 0;
+		}
+	}
+	.aboutContent {
+		flex-direction: column;
+		width: 100%;		
+	}
+	.aboutText h3{
+		font-size: 3rem;
+	}
+}
+
+
 @media all and (max-width: 696px) {
 	.aboutContent {
-		width: 100%;		
 	}
 	.worksText p {
 		font-size: 1.6rem;

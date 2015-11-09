@@ -1,5 +1,8 @@
 $(function(){
 
+// smoothScroll init
+	$('a').smoothScroll();
+
 // animation for toggling nav
 
 function navAnimation(elem){
@@ -12,12 +15,23 @@ function navAnimation(elem){
 	});
 }
 
-
+//call nav animations
+	
 navAnimation('.curly');
 navAnimation('.navLi');
 
+//remove wow animations on ios
+	
+function checkIos(){
+	if (is.ios() === true){
+		$('.aboutImg').removeClass('animated');
+		$('.aboutText').removeClass('animated');
+		$('.worksPair').removeClass('animated');
+		$('.skillsImg').removeClass('animated');
+	}
+}
 
-
+checkIos();
 
 // scripts end
 });
