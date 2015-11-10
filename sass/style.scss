@@ -460,16 +460,19 @@ h3{
 @media all and (max-width: 768px) {
 	#about{
 		.wrapper{
-			justify-content: space-around;
 			padding-top: 0;
 		}
 	}
 	.aboutContent {
-		flex-direction: column;
-		width: 100%;		
+		width: 100%;
+		align-items: flex-start;
 	}
 	.aboutText h3{
 		font-size: 3rem;
+		width: 100%;
+	}
+	.aboutImg{
+		width: 33.33%;
 	}
 }
 
