@@ -518,8 +518,8 @@ h3{
 
 @media all and (max-width: 588px) {
 	#about{
-		h2{
-			padding-top: 3rem;
+		h3{
+			font-size: 2rem;
 		}
 	}
 	#about .wrapper{
@@ -527,14 +527,15 @@ h3{
 		align-items: center;
 	}
 	.aboutContent {
-		flex-direction: column;
+//		flex-direction: column;
 	}
 	.aboutImg, .aboutText{
-		width: 80%;
+		width: 90%;
 	}
 	.aboutImg{
 		text-align: center;
 		padding: 0;
+		margin-top: 1rem;
 	}
 	.worksText {
 		padding: 2rem 0;
@@ -625,7 +626,7 @@ h3{
 	}
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 360px) {
 	#about {
 		padding-top: 1rem;
 		h2{

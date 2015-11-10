@@ -22,8 +22,8 @@ navAnimation('.navLi');
 
 //remove wow animations on ios
 	
-function checkIos(){
-	if (is.ios() === true){
+function checkMobile(){
+	if (is.mobile() === true){
 		$('.aboutImg').removeClass('slideInLeft');
 		$('.aboutText').removeClass('slideInRight');
 		$('.worksText').removeClass('slideInRight');
@@ -32,7 +32,7 @@ function checkIos(){
 	}
 }
 
-checkIos();
+checkMobile();
 
 // scripts end
 });
