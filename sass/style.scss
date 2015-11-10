@@ -388,7 +388,7 @@ h3{
 	a{
 		color: $beige;
 		font-size: 6rem;
-		border-radius: 60%;
+		border-radius: 50%;
 		background: rgba(0,0,0,.3);
 		padding: 1.4rem 3rem;
 		border: 1px solid $whitey;
@@ -517,6 +517,7 @@ h3{
 }
 
 @media all and (max-width: 588px) {
+	
 	h2{
 		font-size: 2.6rem;
 	}
@@ -593,7 +594,7 @@ h3{
 @media all and (max-width: 480px) {
 	nav{
 		font-size: 2rem;
-		top: 10px;
+		top: -20px;
 		left: 10px;
 	}
 	.curly a{
@@ -616,7 +617,7 @@ h3{
 	}
 	.aboutText p{
 		font-size: 1.2rem;
-		line-height: 1.8;
+		line-height: 1.4;
 	}
 	#work{
 		padding: 1rem 1rem 6rem;
@@ -631,6 +632,10 @@ h3{
 			width: 60%;
 			margin-bottom: 0;
 		}
+	}
+	.socialIcons {
+		width: 90%;
+		height: 70%;
 	}
 	.socialIcons a{
 		text-align: center;
@@ -678,7 +683,6 @@ h3{
 		}
 	}
 	.socialIcons{
-		width: 80%;
 		a{
 			font-size: 5rem;
 			padding: 2rem 3rem;
