@@ -517,20 +517,26 @@ h3{
 }
 
 @media all and (max-width: 588px) {
+	h2{
+		font-size: 2.6rem;
+	}
 	#about{
+		h2{
+			margin-bottom: 2rem;
+		}
 		h3{
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
 	}
 	#about .wrapper{
 		justify-content: space-around;
 		align-items: center;
 	}
-	.aboutContent {
-//		flex-direction: column;
-	}
 	.aboutImg, .aboutText{
 		width: 90%;
+	}
+	.aboutText {
+		padding: 2rem;
 	}
 	.aboutImg{
 		text-align: center;
@@ -564,7 +570,6 @@ h3{
 	}
 	#skills {
 		h2{
-			width: 100%;
 			padding-top: 2rem;
 		}
 	}
@@ -575,6 +580,13 @@ h3{
 		img{
 			width: 40px;
 		}
+	}
+	#contact h2{
+		margin-bottom: 2rem;
+	}
+	#contact .wrapper{
+		flex-direction: row;
+		height: 90%;
 	}
 }
 
@@ -598,7 +610,6 @@ h3{
 	}
 	#about .wrapper{
 		justify-content: space-between;
-		padding-top: 4rem;
 	}
 	.aboutImg {
 		width: 33.33%;
@@ -664,11 +675,6 @@ h3{
 		.wrapper{
 			justify-content: center;
 			align-items: center;
-		}
-	}
-	#contact{
-		h2{
-			padding: 6rem 0;
 		}
 	}
 	.socialIcons{
