@@ -4,7 +4,7 @@ get_header(); ?>
 <!-- section.about -->
 <section id="about">
 	
-	<div class="wrapper flex column">
+	<div class="wrapper flex">
 	
 		<h2>About</h2>
 

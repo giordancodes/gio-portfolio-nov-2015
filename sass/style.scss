@@ -212,12 +212,10 @@ h3{
 
 #about{
 	height: 100vh;
-//	padding: 3rem 0 0;
 	background: $whitey;
 	.wrapper{
-		justify-content: space-arou;
+		justify-content: space-around;
 		align-items: center;
-		padding-top: 10rem;
 		height: 100%;
 	}
 	img{
@@ -234,7 +232,6 @@ h3{
 .aboutContent{
 	align-items: center;
 	justify-content: space-around;
-//	padding-top: 5rem;
 }
 
 .aboutText{
@@ -246,12 +243,19 @@ h3{
 	h3{
 		color: $dark;
 		font-family: $source;
-		margin-bottom: 0;
+		margin: 0;
 	}
 	p{
 		font-size: 2rem;
 		color: $dark;
 		line-height: 3.6rem;
+	}
+	a{
+		color: $beige;
+		padding-bottom: 1rem;
+		&:focus, &:hover{
+			color: $cyan;
+		}
 	}
 }
 
@@ -444,7 +448,14 @@ h3{
 	}
 }
 
-@media all and (max-width: 760px) {
+//ipad 3 & 4
+//@media only screen 
+//  and (min-device-width: 768px) 
+//	and (max-device-width: 1024px){
+//		
+//}
+
+@media all and (max-width: 768px) {
 	#about{
 		.wrapper{
 			justify-content: space-around;
