@@ -7,20 +7,15 @@
 * Author URI: http://giordan.ca
 */
 
-$lightgrey: #D8D8D8;
-$darkgrey: #5B5C5D;
-$darkergrey: #3E4042;
 $opensans: 'Open Sans', sans-serif;
 $worksans: 'Work Sans', sans-serif;
 $source: 'Source Code Pro';
-$cyan: #0FA3B1;
 
-$dark: #161616;
-$grey: #676351;
-$brown: #534334;
+$cyan: #0FA3B1;
 $beige: #D0AC54;
-$creme: #967D47;
-$whitey: #F8F8F8;
+$dark: #161616;
+$lightgrey: #D8D8D8;
+$white: #F8F8F8;
 
 @import 'normalize';
 @import 'typography';
@@ -28,6 +23,7 @@ $whitey: #F8F8F8;
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 /*
 ====================================
 Default Styling
@@ -48,6 +44,15 @@ html{
 body {
 	color: #333;
 	font-family: $opensans;
+}
+
+.strokeBeige{
+    color: $white;
+    text-shadow:
+    -1px -1px 0 $beige,
+    1px -1px 0 $beige,
+    -1px 1px 0 $beige,
+    1px 1px 0 $beige;  
 }
 
 .container {
@@ -92,7 +97,7 @@ header{
 nav{
 	position: fixed;
 	font-size: 2rem;
-	left: 20px;
+	left: 10px;
 	top: 20px;
 	z-index: 9999;
 	ul{
@@ -111,7 +116,7 @@ nav{
 }
 
 .curly a, nav ul li a{
-	color: $dark;
+	color: $beige;
 }
 
 .navLi{
@@ -122,7 +127,7 @@ nav{
 	display: inline-block;
 	cursor: pointer;
 	a{
-		color: $whitey;
+		color: $white;
 		font-size: 4rem;
 		font-weight: 200;
 		transition: .8s color;
@@ -212,7 +217,7 @@ h3{
 
 #about{
 	height: 100vh;
-	background: $whitey;
+	background: $white;
 	.wrapper{
 		justify-content: space-around;
 		align-items: center;
@@ -267,7 +272,7 @@ h3{
 	padding: 10rem 0 2rem;
 	padding-bottom: 8rem;
 	h2{
-		color: $whitey;
+		color: $white;
 		margin-bottom: 10rem;
 	}
 }
@@ -372,7 +377,7 @@ h3{
 	height: 100vh;
 	position: relative;
 	h2{
-		color: $whitey;
+		color: $white;
 	}
 	.wrapper{
 		height: calc(100% - 26rem);
@@ -391,7 +396,7 @@ h3{
 		border-radius: 50%;
 		background: rgba(0,0,0,.3);
 		padding: 1.4rem 3rem;
-		border: 1px solid $whitey;
+		border: 1px solid $white;
 		transition: background ease-in .9s, color ease-in .8s;
 		&:hover, &:focus{
 			color: white;
