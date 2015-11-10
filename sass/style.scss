@@ -340,7 +340,7 @@ h3{
 #skills{
 	background: $lightgrey;
 	height: 100vh;
-	padding: 10rem 0 4rem;
+	padding: 4rem 0;
 	h2{
 		color: $dark;
 	}
@@ -373,7 +373,6 @@ h3{
 	position: relative;
 	h2{
 		color: $whitey;
-//		padding-top: 10rem;
 	}
 	.wrapper{
 		height: calc(100% - 26rem);
@@ -420,6 +419,16 @@ h3{
 
 //Media Queries Media Queries Media Queries Media Queries Media Queries 
 
+
+@media all and (max-width: 1024px) {
+	.skillsImg{
+		img{
+			width: 90px;
+		}
+	}
+}
+
+
 @media all and (max-width: 952px) {
 	.works{
 		width: 95%;
@@ -448,13 +457,6 @@ h3{
 	}
 }
 
-//ipad 3 & 4
-//@media only screen 
-//  and (min-device-width: 768px) 
-//	and (max-device-width: 1024px){
-//		
-//}
-
 @media all and (max-width: 768px) {
 	#about{
 		.wrapper{
@@ -473,8 +475,6 @@ h3{
 
 
 @media all and (max-width: 696px) {
-	.aboutContent {
-	}
 	.worksText p {
 		font-size: 1.6rem;
 	}
