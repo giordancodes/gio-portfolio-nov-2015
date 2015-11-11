@@ -18,9 +18,9 @@ get_header(); ?>
 
 			<?php if ($aboutQuery->have_posts()): ?>
 				<?php while($aboutQuery->have_posts()): $aboutQuery->the_post(); ?>
-				<div class="aboutImg wow animated slideInLeft"><?php the_post_thumbnail('medium'); ?>
+				<div class="aboutImg wow animated"><?php the_post_thumbnail('medium'); ?>
 				</div>
-				<div class="aboutText wow animated slideInRight">
+				<div class="aboutText wow animated">
 					<p><?php the_content(); ?></p>
 				</div>
 				<?php endwhile ?>
@@ -51,8 +51,8 @@ get_header(); ?>
 						<h3><a target="_blank" href="http://<?php the_field('live_demo');?>
 									"><?php the_title( ) ?></h3></a>
 						<div class="worksPair flex animated fadeIn wow">
-							<div class="worksImg wow slideInLeft"><?php the_post_thumbnail('large'); ?></div>
-								<div class="worksText wow slideInRight flex column">
+							<div class="worksImg wow"><?php the_post_thumbnail('large'); ?></div>
+								<div class="worksText wow flex column">
 									<div class="worksP"><?php the_content( );?></div>
 									<div class="worksButtons flex">
 										<a class="liveDemo button" target="_blank" href="http://<?php the_field('live_demo');?>
@@ -92,7 +92,7 @@ get_header(); ?>
 	
 					<?php if ($skillQuery->have_posts()): ?>
 						<?php while($skillQuery->have_posts()): $skillQuery->the_post(); ?>
-						<div class="skillsImg wow animated fadeIn"><span class="hint--top hint--warning" data-hint="<?php $thumbnail = get_post( get_post_thumbnail_id() );
+						<div class="skillsImg wow fadeIn"><span class="hint--top hint--warning" data-hint="<?php $thumbnail = get_post( get_post_thumbnail_id() );
 echo $thumbnail->post_title; ?>">
 						<?php the_post_thumbnail('thumbnail'); ?></span>
 						</div>

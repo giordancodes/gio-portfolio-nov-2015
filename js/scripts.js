@@ -22,17 +22,17 @@ navAnimation('.navLi');
 
 //remove wow animations on ios
 	
-function checkMobile(){
-	if (is.mobile() === true){
-		$('.aboutImg').removeClass('slideInLeft');
-		$('.aboutText').removeClass('slideInRight');
-		$('.worksText').removeClass('slideInRight');
-		$('.worksImg').removeClass('slideInLeft');
-		$('.skillsImg').removeClass('animated', 'wow');
+function checkDesktop(){
+	if (is.desktop() === true){
+		$('.aboutImg').addClass('slideInLeft');
+		$('.aboutText').addClass('slideInRight');
+		$('.worksImg').addClass('slideInLeft');
+		$('.worksText').addClass('slideInRight');
+		$('.skillsImg').addClass('animated');
 	}
 }
 
-checkMobile();
+checkDesktop();
 
 // scripts end
 });
