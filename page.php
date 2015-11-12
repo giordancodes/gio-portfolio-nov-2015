@@ -51,7 +51,7 @@ get_header(); ?>
 						<h3><a target="_blank" href="http://<?php the_field('live_demo');?>
 									"><?php the_title( ) ?></h3></a>
 						<div class="worksPair flex animated fadeIn wow">
-							<div class="worksImg wow"><a target="_blank" class="hvr-hang" href="http://<?php the_field('live_demo');?>
+							<div class="worksImg wow"><a target="_blank" href="http://<?php the_field('live_demo');?>
 								"><?php the_post_thumbnail('large'); ?></a></div>
 								<div class="worksText wow flex column">
 									<div class="worksP"><?php the_content( );?></div>
