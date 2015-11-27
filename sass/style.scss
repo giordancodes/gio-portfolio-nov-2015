@@ -694,4 +694,53 @@ h3{
 	}
 }
 
+@media all and (max-height: 360px)
+					 and (max-width: 640px){
+	 nav{
+		 top: -20px;
+	 }
+	 #about{
+		 .wrapper{
+				 h2{
+				 padding-top: 1rem;
+			 }
+		 }
+	 }
+	.aboutText {
+		padding: 1rem 1rem 0;
+		h3{
+			font-size: 2rem;
+		}
+		p{
+			font-size: 1.2rem;
+			line-height: 1.5;
+		}
+	}
+	 #skills{
+		 padding: 0;
+		 .wrapper{
+			 justify-content: space-around;
+			 height: 98%;
+		 }
+		 h2{
+			padding-top: 1rem;
+		 }
+	 }
+	 .skillsFlex{
+		height: 60%;
+		 width: 100%;
+	 }
+	 .skillsImg{
+		img{
+			width: 45px;
+		}
+		 width: 25%;
+	}
+	 #contact{
+		 .wrapper{
+			 height: 100%;
+			 padding: 0 0 2rem;
+		 }	
+	 }
+}
 
