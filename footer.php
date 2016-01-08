@@ -20,9 +20,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- ourobouros svg by Universal Icons,
-contact bubble svg  by Sara Jeffries,
-both from thenounproject.com -->
+<!-- contact bubble svg  by Sara Jeffries from thenounproject.com -->
 
 <!-- icons by font awesome -->
 
