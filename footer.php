@@ -1,5 +1,6 @@
 <footer>
- <!-- hey....thanks for checking out my site :) .G -->
+	<!-- hey....thanks for checking out my site :) .G -->
+	<!-- all code is copyright 2016 Giordan Battaglin-->
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
