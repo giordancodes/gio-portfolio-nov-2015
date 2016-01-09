@@ -20,7 +20,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- contact bubble svg  by Sara Jeffries from thenounproject.com -->
+<!-- contact bubble svg by Sara Jeffries from thenounproject.com -->
 
 <!-- icons by font awesome -->
 
