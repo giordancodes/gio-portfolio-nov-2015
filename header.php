@@ -4,6 +4,8 @@
 <title>Giordan Battaglin</title>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Toronto, Canada based Front-End Developer">
+<meta name="theme-color" content="#0FA3B1">
 <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300|Work+Sans:400,100,200|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
