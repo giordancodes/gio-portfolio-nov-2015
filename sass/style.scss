@@ -655,7 +655,11 @@ h3{
 		text-align: center;
 	}
 }
-
+@media all and (max-width: 375px) {
+	.hint--top:after, .hint--top:before{
+		left: 40%;
+	}
+}
 @media all and (max-width: 360px) {
 	#about {
 		padding-top: 1rem;
