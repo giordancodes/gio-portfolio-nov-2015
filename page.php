@@ -36,7 +36,7 @@ get_header(); ?>
 <section id="work">
 	<div class="wrapper flex">
 
-	<h2>Recent Work</h2>
+	<h2>Recent Projects</h2>
 
 		<?php $workQuery = new WP_query(
 			array(
